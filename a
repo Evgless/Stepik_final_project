@@ -1,0 +1,47 @@
+[33mcommit a02840451412845efdc696117128e06ab59c4fa8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Evgless <evgless@mail.ru>
+Date:   Wed Feb 1 18:31:13 2023 +0300
+
+    Delete pycache dir
+
+[33mcommit 59631553a28d3a04e4f3788cb5e761e55a94d5ba[m
+Author: Evgless <evgless@mail.ru>
+Date:   Wed Feb 1 18:29:03 2023 +0300
+
+    Rewrite test_main_page on PageObject
+
+[33mcommit 4c84f59551db3677d664111b9c5bf3451d8b47ea[m
+Author: Evgless <evgless@mail.ru>
+Date:   Wed Feb 1 18:17:45 2023 +0300
+
+    Add main_page PageObject
+
+[33mcommit 8c2a863c8366230182c7192033d6983f89df1e37[m
+Author: Evgless <evgless@mail.ru>
+Date:   Wed Feb 1 18:01:36 2023 +0300
+
+    Add base_page PageObject
+
+[33mcommit 23bd488d3f7fd811000575ff80546165568b29b3[m
+Author: Evgless <evgless@mail.ru>
+Date:   Tue Jan 31 19:17:57 2023 +0300
+
+    Add base files
+
+[33mcommit d29f332f611597fed8eff3c2791ed6a2176be268[m
+Author: Evgless <evgless@mail.ru>
+Date:   Tue Jan 31 19:14:40 2023 +0300
+
+    Add base files
+
+[33mcommit f6d70d506492d79b8436f653f8f6748d23acd6c4[m
+Author: Evgless <evgless@mail.ru>
+Date:   Tue Jan 31 18:27:32 2023 +0300
+
+    Add README
+
+[33mcommit 7506302493197af29b8417dc6453522cfbf1967f[m
+Author: Evgless <Evgless@users.noreply.github.com>
+Date:   Tue Jan 31 18:08:08 2023 +0300
+
+    Initial commit
