@@ -14,20 +14,20 @@ class ProductPage(BasePage):
         # print('\nproduct name is "', product_name, '"')
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
         # print('\nproduct price is "', product_price, '"')
-        print("Sucsess")
+        print("SUCSESS")
 
     def should_match_product_name(self):
         print("\nchecking product name...", end='\t')
         product_name_check = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_CHECK).text
         assert product_name == product_name_check, "Product name not match"
-        print("Sucsess")
+        print("SUCSESS")
         # print(product_name_check, product_name)
 
     def should_match_product_price(self):
         print("\nchecking product price...", end='\t')
         product_price_check = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE_CHECK).text
         assert product_price == product_price_check, "Product price not match"
-        print("Sucsess")
+        print("SUCSESS")
         # print(product_price_check, product_price)
 
     def should_not_be_success_message(self):
