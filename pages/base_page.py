@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException, NoAlertPresentExc
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from .locators import BasePageLocators
+from .locators import BasePageLocators, LoginPageLocators
 
 class BasePage:
     # def __init__(self, browser, timeout, url):
@@ -68,3 +68,15 @@ class BasePage:
     def go_to_basket_page(self):
         login_link = self.browser.find_element(*BasePageLocators.BASKET_LINK)
         login_link.click()
+
+    def send_keys_to_form(self, keys, how, what, timeout=4):
+        form = WebDriverWait(self.browser, timeout).until(EC.element_to_be_clickable((how, what)))
+        form.send_keys(keys)
+
+    def confirm_register(self):
+        register_button = self.browser.find_element(*LoginPageLocators.REGISTER_BUTTON)
+        register_button.click()
+
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented, probably unauthorised user"
+
