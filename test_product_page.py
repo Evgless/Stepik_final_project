@@ -37,7 +37,7 @@ class TestUserAddToBasketFromProductPage:
 #                                           *range(8, 10)])
 # def test_guest_can_add_to_basket(browser, offer_number):
 #     link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer{offer_number}"
-def test_guest_can_add_to_basket(browser):
+def test_guest_can_add_product_to_basket(browser):
     link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     page = ProductPage(browser, link)
     page.open()
